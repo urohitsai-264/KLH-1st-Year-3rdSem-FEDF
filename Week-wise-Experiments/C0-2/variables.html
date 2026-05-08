@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        if(true){
+            var leak = "I escaped";
+        }
+        console.log(leak);
+
+        if(true){
+            let safe = "I am block-scored";
+            console.log(safe);
+        }
+        let safe = "I am out of block";
+        console.log(safe);
+        
+            const PI = "3.14";
+            console.log(PI);
+            PI = 3;
+        
+    </script>
+</body>
+</html>
