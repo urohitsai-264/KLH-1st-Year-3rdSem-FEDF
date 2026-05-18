@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Booking Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="dashboard">
+    <header>
+      <h1>Movie Booking Dashboard</h1>
+      <p>Display 10 movie records and change ratings dynamically using DOM update methods.</p>
+    </header>
+
+    <div class="controls">
+      <button onclick="updateDirectDOM()">Direct DOM Update</button>
+      <button onclick="updateVirtualDOM()">Virtual DOM Update</button>
+    </div>
+
+    <div class="counters">
+      <div><strong>Direct DOM Ops:</strong> <span id="directCount">0</span></div>
+      <div><strong>Virtual DOM Ops:</strong> <span id="virtualCount">0</span></div>
+    </div>
+
+    <div id="movieList" class="movie-list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
