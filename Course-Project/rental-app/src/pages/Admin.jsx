@@ -75,28 +75,40 @@ export default function Admin({ onBack }) {
             {order.status}
           </p>
 
-          <select
-            value={order.status}
-            onChange={(e) =>
-              updateStatus(
-                order.id,
-                e.target.value
-              )
-            }
-            className="form-input"
-          >
-            <option>
-              Order Placed
-            </option>
+ <select
+  value={order.status}
+  onChange={(e) =>
+    updateStatus(
+      order.id,
+      e.target.value
+    )
+  }
+  className="form-input"
+>
+  <option>
+    Order Placed
+  </option>
 
-            <option>
-              Processing
-            </option>
+  <option>
+    Processing
+  </option>
 
-            <option>
-              Delivered
-            </option>
-          </select>
+  <option>
+    Delivered
+  </option>
+
+  <option>
+    Return Requested
+  </option>
+
+  <option>
+    Returned
+  </option>
+
+  <option>
+    Refunded
+  </option>
+</select>
         </div>
       ))}
     </div>
